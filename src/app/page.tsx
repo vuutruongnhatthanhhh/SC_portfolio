@@ -1,102 +1,153 @@
 import Image from "next/image";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { FaYoutube, FaGithub, FaArrowRight } from "react-icons/fa";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-          <li>Welcome to snake chain</li>
-        </ol>
+    <div className="flex flex-col items-center justify-center min-h-screen ">
+      <div className="w-full max-w-screen-md px-4">
+        {" "}
+        <Header />
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      <main className="flex-grow flex flex-col items-center  space-y-4 px-4 mt-8 ">
+        <div className="flex items-center space-x-4">
+          <Image
+            src="/images/avatar.png"
+            alt="Avatar"
+            width={90}
+            height={90}
+            className="rounded-full border-2 border-gray-300 dark:border-gray-600"
+          />
+          <div className="flex flex-col items-start">
+            <span className="text-xl font-semibold text-gray-900 dark:text-white">
+              Vuu Truong Nhat Thanh
+            </span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              Developer
+            </span>
+          </div>
+        </div>
+
+        {/* work */}
+        <div className="flex flex-col items-start max-w-lg">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white underline decoration-2 decoration-gray-500 dark:decoration-gray-400">
+            Work
+          </h2>
+          <p className="text-gray-900 dark:text-gray-300 mt-2">
+            Hello, I am from Vietnam. I am a full-stack developer with expertise
+            in websites, mobile apps, and blockchain.
+          </p>
+          <div className="flex justify-center w-full mt-4">
+            <a
+              href="/work"
+              className="py-2 px-6 text-sm font-semibold text-white bg-[#319795] rounded-md shadow-md hover:bg-[#2C7A7B] hover:shadow-lg transition-all duration-300"
+            >
+              <span>Project &#8594;</span>
+            </a>
+          </div>
+        </div>
+
+        {/* bio */}
+        <div className="flex flex-col items-start max-w-lg">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white underline decoration-2 decoration-gray-500 dark:decoration-gray-400">
+            Bio
+          </h2>
+
+          <div className="flex items-center mt-4 space-x-4">
+            <div className="text-sm font-semibold text-gray-900 dark:text-white">
+              <span className="sm:hidden">2024</span>{" "}
+              <span className="hidden sm:inline">July 2024 - October 2024</span>{" "}
+            </div>
+
+            <div className="flex-1 text-gray-900 dark:text-gray-300">
+              <p>Intern Blockchain Developer at GlobalChain</p>
+            </div>
+          </div>
+
+          <div className="flex items-center mt-2 space-x-4">
+            <div className="text-sm font-semibold text-gray-900 dark:text-white">
+              <span className="sm:hidden">2025</span>{" "}
+              <span className="hidden sm:inline">November 2024 - Present</span>{" "}
+            </div>
+
+            <div className="flex-1 text-gray-900 dark:text-gray-300">
+              <p>Full-stack Developer at Ngan Anh Phat Co., Ltd.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center w-full mt-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/pdf/cv.pdf"
+            download="My_CV"
+            className="py-2 px-6 text-sm font-semibold text-white bg-[#319795] rounded-md shadow-md hover:bg-[#2C7A7B] hover:shadow-lg transition-all duration-300"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            My CV
           </a>
         </div>
+
+        {/* on the web */}
+        <div className="flex flex-col items-start max-w-lg">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white underline decoration-2 decoration-gray-500 dark:decoration-gray-400">
+            On the web
+          </h2>
+
+          {/* YouTube Channel */}
+          <div className="flex items-center space-x-2 mt-4">
+            <FaYoutube className="text-red-500 w-6 h-6" />
+            <a
+              href="https://www.youtube.com/c/SnakeChain" // Thay đường dẫn này với URL kênh YouTube của bạn
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
+            >
+              Snake Chain YouTube Channel (course)
+            </a>
+          </div>
+
+          {/* Website */}
+          <div className="flex items-center space-x-2 mt-4">
+            <Image
+              src="/images/snakechain.png" // Đường dẫn đến file hình ảnh trong thư mục public
+              alt="Icon"
+              width={24} // Kích thước của biểu tượng
+              height={24} // Kích thước của biểu tượng
+              className="text-gray-600 dark:text-gray-300"
+            />
+            <a
+              href="https://www.snakechain.com" // Thay đường dẫn này với URL website của bạn
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
+            >
+              Snake Chain (course, service for building mobile apps, websites,
+              and blockchain solutions)
+            </a>
+          </div>
+        </div>
+
+        {/* social media */}
+        <div className="flex flex-col items-start max-w-lg">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white underline decoration-2 decoration-gray-500 dark:decoration-gray-400">
+            Social Media
+          </h2>
+
+          {/* Github */}
+          <div className="flex items-center space-x-2 mt-4">
+            <FaGithub className="text-gray-900 dark:text-white w-6 h-6" />
+            <a
+              href="https://github.com/SnakeChain" // Thay đường dẫn này với URL Github của bạn
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
+            >
+              @vuutruongnhatthanhhh (Personal project, Snake Chain project, ...)
+            </a>
+          </div>
+        </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
