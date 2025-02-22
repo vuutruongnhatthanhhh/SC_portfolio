@@ -1,33 +1,31 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { MoonIcon } from "@heroicons/react/24/solid";
 import { FaGithub, FaBars } from "react-icons/fa";
+import { MoonIcon } from "@heroicons/react/24/solid";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); // Trạng thái chế độ tối
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Check for dark mode preference stored in localStorage
     const savedMode = localStorage.getItem("darkMode");
     if (savedMode === "true") {
-      setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     }
   }, []);
 
   const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => {
-      const newMode = !prevMode;
-      localStorage.setItem("darkMode", newMode.toString());
-      if (newMode) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-      return newMode;
-    });
+    // Toggle dark mode directly without using state
+    const isDark = document.documentElement.classList.contains("dark");
+    if (isDark) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("darkMode", "true");
+    }
   };
 
   useEffect(() => {
@@ -88,12 +86,6 @@ const Header: React.FC = () => {
                 <FaGithub className="w-5 h-5" />
                 <span>Github</span>
               </Link>
-              {/* <Link
-                href="/contact"
-                className="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded"
-              >
-                Contact
-              </Link> */}
             </div>
           )}
         </div>
@@ -113,14 +105,7 @@ const Header: React.FC = () => {
             <FaGithub className="w-5 h-5" />
             <span>Github</span>
           </Link>
-          {/* <Link
-            href="/contact"
-            className="text-gray-800 dark:text-gray-300 hover:bg-gray-300 p-2 rounded-full"
-          >
-            Contact
-          </Link> */}
         </nav>
-
         <button
           onClick={toggleDarkMode}
           className="p-2 rounded-full text-gray-700 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
