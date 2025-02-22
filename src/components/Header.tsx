@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { MoonIcon } from "@heroicons/react/24/solid";
 import { FaGithub, FaBars } from "react-icons/fa";
-import { useRouter } from "next/router";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

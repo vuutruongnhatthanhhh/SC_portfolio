@@ -1,15 +1,7 @@
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 import Link from "next/link";
-import {
-  FaYoutube,
-  FaGithub,
-  FaArrowRight,
-  FaInstagram,
-  FaTiktok,
-  FaRegEnvelope,
-} from "react-icons/fa";
+import { FaYoutube, FaGithub, FaTiktok } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="flex-grow flex flex-col items-center space-y-4 px-4 mt-8 dark:bg-gray-900">
