@@ -178,7 +178,6 @@ export default function Home() {
         <div className="flex items-center space-x-2 mt-4">
           <FaTiktok className="text-gray-900 dark:text-white w-6 h-6" />
           <a
-            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
