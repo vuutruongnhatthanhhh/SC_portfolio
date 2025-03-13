@@ -98,7 +98,7 @@ const Header: React.FC = () => {
             Project
           </Link>
           <Link
-            href="https://github.com/vuutruongnhatthanhhh"
+            href="https://github.com"
             target="_blank"
             className="flex items-center space-x-2 text-gray-800 dark:hover:bg-gray-700 dark:text-white hover:bg-gray-300 p-2 rounded-full"
           >
