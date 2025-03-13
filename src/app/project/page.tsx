@@ -28,7 +28,7 @@ export default function Project() {
         </h2>
 
         <a
-          href="https://www.youtube.com"
+          href="https://www.youtube.com/@SnakeChain2801"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8 w-full mt-4 group hover:bg-gray-300 dark:hover:bg-gray-700 dark:text-white p-4 transition-all"
@@ -58,7 +58,7 @@ export default function Project() {
 
         {/* 2 Cột: Hình ảnh mô tả app và thông tin app */}
         <a
-          href="https://www.youtube.com"
+          href="https://www.youtube.com/@SnakeChain2801"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8 w-full mt-4 group hover:bg-gray-300 dark:hover:bg-gray-700 p-4 transition-all"
@@ -88,7 +88,7 @@ export default function Project() {
         </a>
 
         <a
-          href="https://www.youtube.com"
+          href="https://www.youtube.com/@SnakeChain2801"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8 w-full mt-4 group hover:bg-gray-300 dark:hover:bg-gray-700 p-4 transition-all"

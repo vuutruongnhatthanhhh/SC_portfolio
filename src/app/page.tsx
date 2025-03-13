@@ -91,7 +91,7 @@ export default function Home() {
         <div className="flex items-center space-x-2 mt-4">
           <FaYoutube className="text-red-500 w-6 h-6" />
           <a
-            href="https://www.youtube.com/c/SnakeChain"
+            href="https://www.youtube.com/@SnakeChain2801"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
@@ -110,7 +110,7 @@ export default function Home() {
             className="text-gray-600 dark:text-gray-300"
           />
           <a
-            href="https://www.snakechain.com"
+            href="https://snakechain.io.vn"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
@@ -152,7 +152,7 @@ export default function Home() {
         <div className="flex items-center space-x-2 mt-4">
           <FaGithub className="text-gray-900 dark:text-white w-6 h-6" />
           <a
-            href="https://github.com/vuutruongnhatthanhhh"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
@@ -169,7 +169,7 @@ export default function Home() {
             height={24}
             className="text-gray-600 dark:text-gray-300"
           />
-          <a className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500">
+          <a className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500 cursor-pointer">
             @snakechain.code (Coding motivation, share knowledge, courses,
             tutorials, programming tips)
           </a>
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="flex items-center space-x-2 mt-4">
           <FaTiktok className="text-gray-900 dark:text-white w-6 h-6" />
           <a
-            href="https://github.com/SnakeChain"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-900 dark:text-gray-300 hover:text-blue-500"
